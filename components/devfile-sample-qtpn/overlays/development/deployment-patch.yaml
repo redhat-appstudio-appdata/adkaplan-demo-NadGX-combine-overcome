@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-qtpn
+  namespace: adkaplan-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:b2f62db74944bd0ead8b9cba5ccac91add891f5460e8408a8a82ad3861a66969
+        name: my-nodejs
+        resources: {}
+status: {}
