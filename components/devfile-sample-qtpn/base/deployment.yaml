@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-qtpn
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:NadGX-devfile-sample-qtpn
+      - image: quay.io/redhat-appstudio/user-workload@sha256:b2f62db74944bd0ead8b9cba5ccac91add891f5460e8408a8a82ad3861a66969
         name: my-nodejs
         ports:
         - containerPort: 3001
